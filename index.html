@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn Android</title>
+  <meta name="description" content="A hands-on course that takes you from zero to building and publishing native Android apps with Kotlin and Jetpack Compose.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1f14'/%3E%3Cpath d='M14 44a18 18 0 0 1 36 0z' fill='%233ddc84'/%3E%3Ccircle cx='25' cy='36' r='2.6' fill='%230b1f14'/%3E%3Ccircle cx='39' cy='36' r='2.6' fill='%230b1f14'/%3E%3Cpath d='M20 24l4 6M44 24l-4 6' stroke='%233ddc84' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try {
+      var t = localStorage.getItem('la:theme');
+      if (t) document.documentElement.setAttribute('data-theme', JSON.parse(t));
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" onclick="document.getElementById('main').focus(); return false;">Skip to content</a>
+
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Toggle lesson menu" aria-expanded="false" aria-controls="sidebar">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a href="#/" class="brand">
+      <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 46a22 22 0 0 1 44 0z" fill="currentColor"/><circle cx="23" cy="37" r="3" fill="var(--bg)"/><circle cx="41" cy="37" r="3" fill="var(--bg)"/><path d="M16 20l5 8M48 20l-5 8" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg>
+      <span>Learn Android</span>
+    </a>
+    <div class="top-progress" title="Course progress">
+      <div class="bar"><span id="topProgressFill"></span></div>
+      <span id="topProgressText" class="top-progress-text">0%</span>
+    </div>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Lessons">
+      <div class="search">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="search" type="search" placeholder="Search lessons…" autocomplete="off" aria-label="Search lessons">
+      </div>
+      <nav id="nav"></nav>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <main id="main" tabindex="-1"></main>
+  </div>
+
+  <script src="js/course-data.js"></script>
+  <script src="js/highlight.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

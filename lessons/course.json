@@ -1,0 +1,12 @@
+{
+  "parts": [
+    { "id": 1, "title": "Getting Started", "description": "What Android is, how apps run on a phone, installing Android Studio, and running your very first app." },
+    { "id": 2, "title": "Kotlin Essentials", "description": "The language of modern Android. Learn it properly first: types, control flow, collections, null safety, classes, lambdas and coroutines." },
+    { "id": 3, "title": "UI with Jetpack Compose", "description": "Build screens declaratively: composables, layouts, Material 3 components, state, lists, theming, side effects and animation." },
+    { "id": 4, "title": "App Architecture", "description": "How real apps are structured: the Activity lifecycle, navigation between screens, ViewModels, layered architecture and dependency injection with Hilt." },
+    { "id": 5, "title": "Data & Networking", "description": "Fetch data from web APIs with Retrofit, store it locally with Room and DataStore, and make your app work offline." },
+    { "id": 6, "title": "The Android Platform", "description": "Intents, runtime permissions, background work, notifications, images and media, plus the legacy View system you'll meet in older code." },
+    { "id": 7, "title": "Quality & Shipping", "description": "Test your code, debug and profile like a pro, then sign, build and publish your app on Google Play." },
+    { "id": 8, "title": "Capstone: RecipeBox", "description": "Put everything together and build a complete, production-style app from an empty project to a release build." }
+  ]
+}
